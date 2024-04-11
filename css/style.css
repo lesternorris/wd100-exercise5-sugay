@@ -1,0 +1,216 @@
+html, body{
+    margin: 0;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.pos-relative{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    top: 0;
+    /* applicable din to sa picture basta meron pos-relative and overlay */
+}
+.welcome-message{
+    position: absolute;
+    text-align: center;
+}
+.welcome-message h1{
+    color: white;
+    font-family: 'Candara';
+    font-weight: normal;
+    font-size: 55px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bordered{
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+*{
+    font-family: "Candara";
+}
+
+.header-btn{
+    margin: 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    /* 2 values 
+        1st value = top and bottom
+        2nd value = left to right */
+        font-size: 20px;
+        letter-spacing: 5px;
+        cursor: pointer;
+        /* mag babago yung cursor pag tinapat sa button */
+        background: none;
+}
+
+.header-btn:hover{
+    margin: 15px;
+    background: white;
+    color: black;
+    transition: 0.5s;
+    /* sudo background ( additonal effects ) */
+}
+
+.about-container{
+    background-color: black;
+}
+
+.about-content{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.about-content h1{
+    color: goldenrod;
+    font-weight: normal;
+    font-size: 45px;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+}
+
+.menu-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url("../img/bg-menu.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.menu-content{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
+.menu-content h1{
+    color: goldenrod;
+    font-weight: normal;
+    font-size: 45px;
+
+}
+.menu-content p{
+    color: white;
+    font-size: 20px;
+    /* done */
+}
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+}
+img{
+    width: 100%;
+}
+.golden-btn{
+    margin: 30px;
+    color: goldenrod;
+    border: solid goldenrod;
+    padding: 10px 30px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: none;
+    transition: 0.5s;
+}
+.golden-btn:hover{
+    background-color: goldenrod;
+    color: white;
+}
+.contact-container{
+    margin: 50px 0px;
+}
+.contact-content{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.contact-content h1{
+    color: goldenrod;
+    font-weight: normal;
+    font-size: 45px;
+    margin-top: 0;
+}
+.contact-content p{
+    color: white;
+    margin-bottom: 0;
+}
+.contact-content input{
+    margin: 0;
+    background: none;
+    border: none;
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+.contact-content textarea{
+    background: none;
+    border: none;
+    border: 2px solid goldenrod;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 18px;
+    height: 300px;
+}
+
+footer{
+    background-color: goldenrod;
+    padding: 20px;
+}
+
+nav{
+    background-color: black rgb(0 0 0 / 32%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.nav-item{
+    padding-right: 20px;
+}
